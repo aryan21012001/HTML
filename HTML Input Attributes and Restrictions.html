@@ -1,0 +1,223 @@
+﻿1. Design the web page using all the below input attributes type =text, password, submit, reset, radio, checkbox, button,
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Using input attributes like text, password, submit, reset, radio,
+        checkbox, button,
+    </h1>
+    <br>
+
+    <textarea></textarea>
+
+    <textarea rows="4"></textarea>
+
+    <textarea rows="4" cols="30"></textarea>
+    </br>
+    <br>
+    <form>
+        <label for="pwd">Password:</label><!--password input attribute-->
+        <input type="password" id="pwd" />
+    </form>
+    </br>
+    <br><input type="submit" /></br><!--submit input attribute-->
+    <br> <input type="reset" /></br><!--rest input attribute-->
+
+    <input type="radio" name="gender" id="male" /><!--radio input attribute-->
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female" />
+    <label for="female">Female</label>
+    <label> <input type="checkbox" /> :Bike</label><!--checkbox-->
+    <label> <input type="checkbox" /> :Car</label>
+    <button>Button</button><!--button input attribute-->
+</body>
+</html>
+
+
+
+
+HTML5 input Types type=number, range, color, date, file, time, month, week, email
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Using input attributes like number, range, colour, date, file, time,
+        month, week, email
+    </h1>
+    <form>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number"
+               id="quantity"
+               name="quantity"
+               min="1"
+               max="5" /><!--quantity input attribute-->
+    </form>
+    <br />
+    <form>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range"
+               id="vol"
+               name="vol"
+               min="0"
+               max="50" /><!--volume input attribute-->
+    </form>
+    <br />
+    <form>
+        <label for="favcolor">Select your favorite color:</label><!--color input type-->
+        <input type="color" id="favcolor" name="favcolor" />
+    </form>
+    <br />
+    <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date"
+               id="birthday"
+               name="birthday" /><!--birthday input type-->
+    </form>
+    <br />
+    <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile" /><!--file input type-->
+    </form>
+    <br />
+    <form>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt" /><!--time input attribute-->
+    </form>
+    <br />
+    <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month"
+               id="bdaymonth"
+               name="bdaymonth" /><!--month input type-->
+    </form>
+    <br />
+    <form>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week" /><!--week input type-->
+    </form>
+    <br />
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" />
+    </form>
+    <!--email input type-->
+    <br />
+</body>
+</html>
+
+
+
+
+Apply all of the below input restrictions disabled, max, maxlength, min, readonly, required, size, value
+ment</title>
+  </head>
+<body>
+    <h1>
+        Using input restrictions like disabled, max, maxlength, min, readonly,
+        required, size, value
+    </h1>
+    <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" disabled /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+    <br />
+    <form>
+        <label for="datemax">Enter a date before 1980-01-01:</label><!--max input restriction-->
+        <input type="date"
+               id="datemax"
+               name="datemax"
+               max="1979-12-31" /><br /><br />
+
+        <label for="datemin">Enter a date after 2000-01-01:</label><!--min input restriction-->
+        <input type="date"
+               id="datemin"
+               name="datemin"
+               min="2000-01-02" /><br /><br />
+
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number"
+               id="quantity"
+               name="quantity"
+               min="1"
+               max="5" /><!--quantity input restriction-->
+    </form>
+    <br />
+    <form>
+        <label for="fname">First name:</label><br /><!--first name input restriction-->
+        <input type="text" id="fname" name="fname" size="50" /><br />
+        <label for="pin">PIN:</label><br /><!--pin input restriction-->
+        <input type="text" id="pin" name="pin" maxlength="4" size="4" />
+    </form>
+    <br />
+    <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" readonly /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+    <br />
+    <form>
+        <label for="username">Username:</label><!--username input restriction-->
+        <input type="text" id="username" name="username" required />
+    </form>
+    <br />
+    <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" size="50" /><br />
+        <label for="pin">PIN:</label><br />
+        <input type="text" id="pin" name="pin" size="4" />
+    </form>
+    <br />
+    <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+</body>
+</html>
+
+
+
+
+Develop a web page using target attribute.
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<h1>Target Attribute</h1>
+<body>
+    <a href="https://jalatechnologies.com/" target="_blank">Visit JALA TECH</a><!--this is the target attribute it works like a link-->
+</body>
+</html>
+
+
+
+
+Use I-frames and Marquee in your webpage.
+<html>
+<body>
+    <h1>iframe and marquee</h1>
+
+    <iframe src="https://jalatechnologies.com" title="A job for everyone">
+        <!--this is the iframe-->
+    </iframe>
+    <marquee>This is a basic marquee</marquee><!-- this is the marquee-->
+</body>
+</html>

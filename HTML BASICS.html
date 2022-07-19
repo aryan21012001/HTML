@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+Understand the basics.html which was already created
+<html>
+<body>
+    <h1>Q1 HTML basics</h1>
+    <h2>This is heading 1</h2>
+    <h3>This is heading 2</h3>
+    <h4>This is heading 3</h4>
+    <p>My first paragraph.</p>
+</body>
+</html>
+
+
+
+
+Develop your own web page basics.html with all the following html tags Html, head, title, body Heading, Paragraph, Italic, Bold, Anchor, Unordered List, List Item, label, Blockquote, Horizontal rule, Image, Division, Span
+<html>
+<body>
+    <h1>Q2 Own webpage with a lot of stuff</h1>
+    <!--heading-->
+
+    <p><b>My first paragraph.</b></p>
+    <!--paragraph-->
+    <i>This is my second paragraph</i>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        Super serious stuff<!--link-->
+    </a>
+    <hr />
+    <ul>
+        <li>This is</li>
+        <li>An Unordered</li>
+        <!--unordered list-->
+        <li>List</li>
+    </ul>
+    <ol>
+        <li>First we do this,</li>
+        <li>and then we do this,</li>
+        <li>and then we do this.</li>
+    </ol>
+    <blockquote>this is a blockquote</blockquote>
+    <!--blockqoute-->
+    <div>This is div block</div>
+    <!--div-->
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" /><!--image-->
+</body>
+</html>
+
+
+
+
+Navigate within the page to a different section.
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section links</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .section {
+            /*section specifics*/
+            width: 100vw;
+            height: 40vh;
+            background-color: #ef5354;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            margin: 10px 5px;
+        }
+
+        .one,
+        .three {
+            background-color: #e03b8b;
+        }
+
+        .nav {
+            /*navigation specifics*/
+            width: 100vw;
+            height: 40vh;
+            background-color: #3944f7;
+            font-size: x-large;
+            color: white;
+            text-align: center;
+            margin: 10px 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            place-items: center;
+        }
+
+        .btn {
+            /*button specifics*/
+            color: white;
+            background-color: #38cc77;
+            height: 40px;
+            width: 90px;
+            padding: 2px;
+            border: 2px solid black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#section1" class="btn">1</a>
+        <a href="#section2" class="btn">2</a>
+        <a href="#section3" class="btn">3</a>
+        <a href="#section4" class="btn">4</a>
+    </div>
+    <div class="section one" id="section1">section 1</div>
+    <div class="section two" id="section2">section 2</div>
+    <div class="section three" id="section3">section 3</div>
+    <div class="section four" id="section4">section 4</div>
+</body>
+</html>
